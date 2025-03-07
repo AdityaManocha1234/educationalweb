@@ -1,0 +1,125 @@
+.back {
+    background-image: url('../../../mybg.png');
+    background-color: orange;
+    height: 500px;
+}
+
+.hero {
+    display: grid;
+    width: 100%;
+    place-items: left;
+    transform: scale(0);
+    animation: heroAnimation 1.5s ease-in-out forwards;
+}
+
+.hero_header {
+    font-size: 50px;
+    text-align: left;
+    margin-top: 150px;
+    color: white;
+}
+
+.hero p {
+    font-size: 35px;
+    text-align: left;
+    height: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 155px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    height: 180px;
+}
+.card button {
+    background-color: #ff6d00;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    flex-direction: column;
+    display: flex;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: -108px;
+    margin-left: 100px;
+}
+
+.login-form h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #218838;
+}
+
+@keyframes heroAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+        
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+       
+    }
+}

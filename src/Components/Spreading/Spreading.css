@@ -1,0 +1,105 @@
+
+.spreading-container {
+    font-family: Arial, sans-serif;
+    color: #212121;
+    background-color: #f8f9fa;
+    padding: 40px;
+    overflow: hidden;
+}
+
+
+.spreading-container .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.spreading-container .text-section {
+    max-width: 50%;
+    animation: slide-up 1s ease-in-out;
+}
+
+.spreading-container .title {
+    font-size: 2.5rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.spreading-container .highlight {
+    color: #ff6600;
+}
+
+.spreading-container .divider {
+    width: 80px;
+    height: 4px;
+    background-color: #ff6600;
+    border: none;
+    margin: 10px 0 20px;
+}
+
+.spreading-container .statistics-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.spreading-container .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spreading-container .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spreading-container .stat-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.spreading-container .stat-number {
+    font-size: 1.8rem;
+    color: #212121;
+    margin: 5px 0;
+}
+
+.spreading-container .stat-text {
+    font-size: 1rem;
+    color: #ff6600;
+    margin: 0;
+}
+
+
+.spreading-container .image-section {
+    animation: slide-up 1s ease-in-out;
+}
+
+.spreading-container .student-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
